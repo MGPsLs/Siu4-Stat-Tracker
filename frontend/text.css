@@ -1,9 +1,58 @@
+body {
+  background-color: darkslategray;
+  height: 3000px;
+  padding-top: 150px;
+}
+
 .banner {
   font-family: 'Times New Roman', Times, serif;
   font-size: 50px;
   font-weight: bold;
   text-align: center;
-  color: rgb(100, 139, 139);
-  margin-top: 1%;
-  margin-bottom: 1%;
+  background-color: black;
+  color: cyan;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+}
+
+.addPlayerBox {
+  padding-bottom:20px;
+  position: static;
+}
+
+.table {
+  background: darkcyan;
+  color: cyan;
+  position: relative;
+}
+
+.subheader {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: cyan;
+}
+
+.normalfont {
+  font-family: 'Times New Roman', Times, serif;
+  color: cyan;
+}
+
+caption {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  background-color: black;
+}
+
+th,
+td {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  background-color: rgb(0, 69, 69);
 }

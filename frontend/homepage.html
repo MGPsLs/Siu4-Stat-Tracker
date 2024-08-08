@@ -8,6 +8,35 @@
   </head>
 
   <body>
-    <p class="banner">Siu4 Basketball Stat Tracker</p>
+    <div class="banner">
+      <p>Siu4 Basketball Stat Tracker</p>
+    </div>
+    <div class="addPlayerBox"> 
+      <p class="subheader">Add a player to start tracking!</p>
+      <form id="playerForm">
+        <input type="text" id="name" placeholder="Player Name" required>
+        <input type="text" id="number" placeholder="Shirt Number" required>
+        <button type="submit">Add</button>
+      </form>
+    </div>
+    <table class="table" id="playerTable">
+      <caption>
+      PLAYERS
+      </caption>
+      <tr>
+        <th>Name</th>
+        <th>Number</th>
+        <th>Points</th>
+        <th>Assists</th>
+        <th>Rebounds</th>
+        <th>FGM</th>
+        <th>FGA</th>
+        <th>3PM</th>
+        <th>3PA</th>
+        <th>TO</th>
+        <th>PF</th>
+      </tr>
+    </table>
+    <script src="table.js"></script>
   </body>
 </html>
