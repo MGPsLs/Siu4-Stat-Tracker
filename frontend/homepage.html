@@ -16,27 +16,41 @@
       <form id="playerForm">
         <input type="text" id="name" placeholder="Player Name" required>
         <input type="text" id="number" placeholder="Shirt Number" required>
-        <button type="submit">Add</button>
+        <button type="submit" id="addNewPlayer">Add</button>
       </form>
     </div>
-    <table class="table" id="playerTable">
-      <caption>
-      PLAYERS
-      </caption>
-      <tr>
-        <th>Name</th>
-        <th>Number</th>
-        <th>Points</th>
-        <th>Assists</th>
-        <th>Rebounds</th>
-        <th>FGM</th>
-        <th>FGA</th>
-        <th>3PM</th>
-        <th>3PA</th>
-        <th>TO</th>
-        <th>PF</th>
-      </tr>
-    </table>
-    <script src="table.js"></script>
+    <div>
+      <table class="table" id="playerTable">
+        <caption>
+        PLAYERS
+        </caption>
+        <thead>
+          <tr>
+            <th>Number</th>
+            <th>Name</th>
+            <th>Points</th>
+            <th>Assists</th>
+            <th>Rebounds</th>
+            <th>FGM</th>
+            <th>FGA</th>
+            <th>3PM</th>
+            <th>3PA</th>
+            <th>FTM</th>
+            <th>FTA</th>
+            <th>Steals</th>
+            <th>Blocks</th>
+            <th>TO</th>
+            <th>PF</th>
+            <th>EDIT</th>
+          </tr>
+        </thead>
+        <tbody id="playerTableBody">
+          <!-- Player's data will be dynamically added here -->
+        </tbody>  
+      </table>
+    </div>
+    <script src="/backend/retrievePlayer.js"></script>
+    <script src="/backend/edit.js"></script>
+    <script src="/backend/addPlayer.js"></script>
   </body>
 </html>
